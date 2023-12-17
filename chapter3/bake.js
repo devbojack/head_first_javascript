@@ -1,12 +1,6 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Bake (with return)</title>
-  </head>
-  <body>
-  </body>
-  <script>
+// node bake.js
+
+
 function bake(degrees) {
     var message;
 
@@ -22,12 +16,13 @@ function bake(degrees) {
     return message;
 }
 
-var status = bake(350);
+var bakeStatus = bake(350);
+console.log(bakeStatus);
 
-// Here so the code will run!
-function setMode(mode) { };
-function setTemp(degrees) { };
 
-  </script>
-</body>
-</html>
+function setMode(mode) {
+    // set baking mode
+};
+function setTemp(degrees) { 
+    // set baking temp
+};

@@ -1,17 +1,9 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>The Thing-a-ma-jig</title>
-  </head>
-  <body>
-  </body>
-  <script>
+
 function clunk(times) {
 	var num = times;
 	while (num > 0) {
 		display("clunk");
-		num = num - 1;
+		num -= 1;
 	}
 }
 
@@ -24,8 +16,8 @@ function thingamajig(size) {
 		display("thunk");
 	} else {
 		while (size > 1) {
-			facky = facky * size;
-			size = size - 1;
+			facky *= size;
+			size -= 1;
 		}
 		clunk(facky);
 	}
@@ -33,32 +25,24 @@ function thingamajig(size) {
 
 function display(output) {
 	console.log(output);
-	clunkCounter = clunkCounter + 1;
+	clunkCounter += 1;
 }
+
 var clunkCounter = 0;
 thingamajig(0);
 console.log(clunkCounter);
 
-clunkCounter = 0;
 thingamajig(1);
 console.log(clunkCounter);
 
-clunkCounter = 0;
 thingamajig(2);
 console.log(clunkCounter);
 
-clunkCounter = 0;
 thingamajig(3);
 console.log(clunkCounter);
 
-clunkCounter = 0;
 thingamajig(4);
 console.log(clunkCounter);
 
-clunkCounter = 0;
 thingamajig(5);
 console.log(clunkCounter);
-
-  </script>
-</body>
-</html>

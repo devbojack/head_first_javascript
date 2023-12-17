@@ -1,16 +1,9 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Area and Distance</title>
-  </head>
-  <body>
-  </body>
-  <script>
+// node areaAndDistance.js
+
+
 var x = 32;
 var y = 44;
 var radius = 5;
-
 var centerX = 0;
 var centerY = 0;
 var width = 600;
@@ -22,6 +15,8 @@ function setup(width, height) {
 }
 
 function computeDistance(x1, y1, x2, y2) {
+    // calculates the Euclidean distance 
+    // Distance= sqrt((x1−x2)^2 + (y1−y2)^2)
     var dx = x1 - x2;
     var dy = y1 - y2;
     var d2 = (dx * dx) + (dy * dy);
@@ -37,8 +32,7 @@ function circleArea(r) {
 setup(width, height);
 var area = circleArea(radius);
 var distance = computeDistance(x, y, centerX, centerY);
-alert("Area: " + area);
-alert("Distance: " + distance);
-  </script>
-</body>
-</html>
+
+console.log("Area: " + area);
+console.log("Distance: " + distance);
+
