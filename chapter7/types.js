@@ -42,8 +42,10 @@ function lieDetectorTest() {
 }
 
 var numberOfLies = lieDetectorTest();
+
 console.log("________________________________")
 console.log("You told " + numberOfLies + " lies!");
+
 if (numberOfLies >= 3) {
 	console.log("Guilty as charged");
 }
