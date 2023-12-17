@@ -1,11 +1,13 @@
 
-function Duck(sound) { 
-	this.sound = sound;
+function Duck(someSound) { 
+	this.sound = someSound;
 	this.quack = function() {
-		console.log(this.sound);
+		console.log("The Duck says: " + someSound);
 	};
 }
 var toy = new Duck("quack quack"); 
 toy.quack();
-console.log(typeof toy); 
-console.log(toy instanceof Duck);
+console.log("typeOf toy: -------> " + typeof toy); 
+console.log("typeOf toy.sound: -------> " + typeof toy.sound);
+console.log("typeOf toy.quack: -------> " + typeof toy.quack);
+console.log("Is toy instanceOf Duck? -------> " + (toy instanceof Duck));
