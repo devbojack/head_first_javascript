@@ -1,18 +1,12 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<title>Car with drive</title>
-<script>
 
 var fiat = { 
-    make: "Fiat",
-    model: "500",
-    year: 1957, 
+    make: "BMW",
+    model: "X5",
+    year: 2022, 
     color: "Medium Blue",
-    passengers: 2,
+    passengers: 5,
     convertible: false,
-    mileage: 88000,
+    mileage: 2000,
     started: false,
 
     start: function() {
@@ -24,14 +18,12 @@ var fiat = {
 	},
 
     drive: function() {
-		//
 		// if we use started instead of this.started, 
 		// our code doesn't work!
-		//
 		if (this.started) {
-			alert("Zoom zoom!");
+			console.log("Zoom zoom!");
 		} else {
-			alert("You need to start the engine first.");
+			console.log("You need to start the engine first.");
 		}
 	}
 };
@@ -40,10 +32,3 @@ fiat.drive();
 fiat.start();
 fiat.drive();
 fiat.stop();
-
-</script>
-</head>
-<body>
-</body>
-</html>
-

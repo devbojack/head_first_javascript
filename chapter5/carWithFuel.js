@@ -1,24 +1,18 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<title>Car with fuel</title>
-<script>
 
 var fiat = { 
-    make: "Fiat",
-    model: "500",
-    year: 1957, 
-    color: "Medium Blue",
-    passengers: 2,
+    make: "Porsche",
+    model: "Cayenne",
+    year: 2021, 
+    color: "Silver Black",
+    passengers: 5,
     convertible: false,
-    mileage: 88000,
+    mileage: 8800,
 	fuel: 0,
     started: false,
 
     start: function() {
 		if (this.fuel == 0) {
-			alert("The car is on empty, fill up before starting!");
+			console.log("The car is on empty, fill up before starting!");
 		} else {
 			this.started = true;
 		}
@@ -31,15 +25,15 @@ var fiat = {
 	drive: function() {
 		if (this.started) {
 			if (this.fuel > 0) {
-				alert(this.make + " " +
+				console.log(this.make + " " +
 				      this.model + " goes zoom zoom!");
 				this.fuel = this.fuel - 1;
 			} else {
-				alert("Uh oh, out of fuel.");
+				console.log("Uh oh, out of fuel.");
 				this.stop();
 			} 
 		} else {
-			alert("You need to start the engine first.");
+			console.log("You need to start the engine first.");
 		}
 	},
 
@@ -56,10 +50,3 @@ fiat.drive();
 fiat.drive();
 fiat.drive();
 fiat.stop();
-
-</script>
-</head>
-<body>
-</body>
-</html>
-

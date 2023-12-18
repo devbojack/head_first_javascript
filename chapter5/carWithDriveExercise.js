@@ -1,9 +1,3 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<title>All cars driving</title>
-<script>
 
 var fiat = { 
 	make: "Fiat",
@@ -123,10 +117,3 @@ chevy.stop();
 taxi.start();
 taxi.drive();
 taxi.stop();
-
-</script>
-</head>
-<body>
-</body>
-</html>
-
