@@ -1,73 +1,62 @@
 
-var chevy = { 
-	make: "Chevy",
-	model: "Bel Air",
-	year: 1957, 
+var toyota = {
+	make: "Toyota",
+	model: "Camry",
+	year: 2016,
 	color: "red",
-	passengers: 2,
-	convertible: false,
-	mileage: 1021
-};
-
-var fiat = { 
-	make: "Fiat",
-	model: "500",
-	year: 1957, 
-	color: "Medium Blue",
-	passengers: 2,
-	convertible: false,
-	mileage: 88000
-};
-
-var cadi = {
-	make: "GM",
-	model: "Cadillac",
-	year: 1955, 
-	color: "tan",
 	passengers: 5,
 	convertible: false,
-	mileage: 12892
+	mileage: 11000
+};
+
+var porsche = {
+	make: "Porsche",
+	model: "Cayenne",
+	year: 2022,
+	color: "Silver Black",
+	passengers: 5,
+	convertible: false,
+	mileage: 8000
+};
+
+var ford = {
+	make: "Ford",
+	model: "Ranger",
+	year: 2018,
+	color: "red",
+	passengers: 5,
+	convertible: false,
+	mileage: 88892
 };
 
 
-var taxi = { 
-    make: "WebVille Motors",
-    model: "Taxi",
-    year: 1955,
-    color: "yellow",
-    passengers: 4,
-    convertible: false,
-    mileage: 281341
+var bmw = {
+	make: "BMW",
+	model: "X5",
+	year: 2023,
+	color: "Medium Blue",
+	passengers: 5,
+	convertible: false,
+	mileage: 7541
 };
 
 function prequal(car) {
-    if (car.mileage > 10000) {
-        return false;
-    } else if (car.year > 1960) {
-        return false;
-    }
-    return true;
+	if (car.mileage > 8000) {
+		return false;
+	} else if (car.year < 2020) {
+		return false;
+	}
+	return true;
 }
 
-var worthALook = prequal(taxi);
-
-if (worthALook) {
-    console.log("You gotta check out this " + taxi.make + " " + taxi.model);
-} else {
-    console.log("You should really pass on the " + taxi.make + " " + taxi.model);
-}
-
-//
-// add a function to make it easier to generate the console output!
-//
 function isWorthALook(didQualify, car) {
 	if (didQualify) {
 		console.log("You gotta check out this " + car.make + " " + car.model);
 	} else {
-    	console.log("You should really pass on the " + car.make + " " + car.model);
+		console.log("You should really pass on the " + car.make + " " + car.model);
 	}
 }
-isWorthALook(prequal(taxi), taxi);
-isWorthALook(prequal(cadi), cadi);
-isWorthALook(prequal(chevy), chevy);
-isWorthALook(prequal(fiat), fiat);
+isWorthALook(prequal(ford), ford);
+isWorthALook(prequal(toyota), toyota);
+isWorthALook(prequal(bmw), bmw);
+isWorthALook(prequal(porsche), porsche);
