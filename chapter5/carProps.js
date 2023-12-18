@@ -1,9 +1,3 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<title>Car properties</title>
-<script>
 
 var fiat = { 
     make: "Fiat",
@@ -25,10 +19,10 @@ var fiat = {
 
     drive: function() {
 		if (this.started) {
-			alert(this.make + " " +
+			console.log(this.make + " " +
 					this.model + " goes zoom zoom!");
 		} else {
-			alert("You need to start the engine first.");
+			console.log("You need to start the engine first.");
 		}
 	}
 };
@@ -36,13 +30,6 @@ var fiat = {
 fiat.start();
 fiat.drive();
 
-for (prop in fiat) {
-	console.log(prop + ": " + fiat[prop]);
+for (properties in fiat){
+    console.log(properties + " : " + fiat[properties]);
 }
-
-</script>
-</head>
-<body>
-</body>
-</html>
-
