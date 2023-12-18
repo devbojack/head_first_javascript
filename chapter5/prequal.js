@@ -1,9 +1,3 @@
-<!doctype html>
-<html lang="en">
-<head>
-<title>Prequalifcation</title>
-<meta charset="utf-8">
-<script>
 
 var chevy = { 
 	make: "Chevy",
@@ -77,10 +71,3 @@ isWorthALook(prequal(taxi), taxi);
 isWorthALook(prequal(cadi), cadi);
 isWorthALook(prequal(chevy), chevy);
 isWorthALook(prequal(fiat), fiat);
-
-</script>
-</head>
-<body>
-</body>
-</html>
-

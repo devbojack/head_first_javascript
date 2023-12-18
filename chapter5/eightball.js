@@ -1,9 +1,14 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<title>Magic Eightball</title>
-<script>
+var eightBall = {
+    balls: ["One","Two","Three","Four","Five","Six","Seven", "Eight"],
+    shake: function(){
+        return this.balls[Math.floor(Math.random() * this.balls.length)];
+    },
+    display: function(){
+        console.log(this.shake());
+    }
+}
+eightBall.display();
+
 
 var eightBall = { 
 	index: 0,  
@@ -27,10 +32,3 @@ console.log(eightBall.look());
 
 eightBall.shake();	
 console.log(eightBall.look());
-
-</script>
-</head>
-<body>
-</body>
-</html>
-

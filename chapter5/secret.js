@@ -1,9 +1,3 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<title>Secret</title>
-<script>
 
 function getSecret(file, secretPassword) {
 	file.opened = file.opened + 1;
@@ -33,11 +27,3 @@ console.log(secret);
 setSecret(superSecretFile, 2, "Dr. Evel's next meeting is in Philadelphia.");
 secret = getSecret(superSecretFile, 2);
 console.log(secret);
-
-
-</script>
-</head>
-<body>
-</body>
-</html>
-
