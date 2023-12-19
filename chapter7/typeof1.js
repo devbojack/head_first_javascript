@@ -1,5 +1,5 @@
 
-var test1 = "abcdef";            //string
+var test1 = "abcdef";           //string
 var test2 = 123;                //number
 var test3 = true;               //boolean
 var test4 = {};                 //object
@@ -14,6 +14,6 @@ var test10 = null;              //object
 
 var allTest = [test1, test2, test3, test4, test5, test6, test7, test8, test9, test10];
 
-for (var i =0; i < allTest.length; i++){
+for (var i = 0; i < allTest.length; i++){
     console.log(typeof allTest[i]);
 }
